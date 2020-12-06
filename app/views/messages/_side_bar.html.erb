@@ -3,7 +3,7 @@
 <%# サイドバーのヘッダー %>
   <div class = header_side_bar>
     <div class = user_name>
-      <a href="hoge">Tom</a>
+      <%= link_to current_user.name, edit_user_path(current_user) %>
     </div>
     <div class = chat_btn>
       <a href="hoge">チャットを作成する</a>
